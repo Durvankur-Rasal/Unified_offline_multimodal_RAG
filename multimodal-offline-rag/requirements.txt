@@ -1,0 +1,28 @@
+# Core ML & AI Frameworks
+torch>=2.0.0
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+
+# Vector Database & LLM Engine
+faiss-cpu>=1.7.0  # Note: Change to 'faiss-gpu' if you have an NVIDIA GPU
+# llama-cpp-python>=0.2.0
+
+# Orchestration
+langchain>=0.1.0
+
+# Document & Image Processing
+pypdf>=3.0.0
+python-docx>=0.8.11
+Pillow>=9.0.0
+pytesseract>=0.3.10
+
+# Audio Processing
+openai-whisper>=20230101
+
+# Data Processing & Utilities
+numpy>=1.23.0
+pandas>=1.5.0
+scipy>=1.9.0
+click
+pydantic
+python-dotenv

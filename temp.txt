@@ -1,0 +1,4 @@
+major env
+
+install Tesseract-OCR
+install ffmpeg
