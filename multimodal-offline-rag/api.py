@@ -6,6 +6,7 @@ import uvicorn
 
 # Import your existing pipeline
 from src.rag_pipeline import RAGPipeline
+from src.agentic_pipeline import AgenticRAG
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -19,6 +20,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # In production, change this to your React app's local URL (e.g., http://localhost:3000)
     allow_credentials=True,
+    
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -46,7 +48,7 @@ async def startup_event():
     
     # We removed the try-except block. If this fails, the server will crash
     # and print the exact Python error traceback, making it easy to fix!
-    pipeline = RAGPipeline()
+    pipeline = AgenticRAG()
     print("✅ Pipeline successfully loaded and ready for requests!")
     
 @app.get("/health")
